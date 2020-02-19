@@ -18,9 +18,9 @@ public class SortingofList {
 		SortingofList example = new SortingofList();
 		example.displayPlaces(places);
 		System.out.println("**************");
-		//places.sort(null);
-		//Collections.reverse(places);
-		//System.out.println("**************");
+		places.sort(null);
+		Collections.reverse(places);
+		System.out.println("**************");
 		Collections.reverse(places);
 		example.displayPlaces(places);
 
