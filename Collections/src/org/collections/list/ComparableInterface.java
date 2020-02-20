@@ -7,6 +7,10 @@ import java.util.ListIterator;
 
 public class ComparableInterface {
 
+	/**
+	 * @author subhan
+	 *
+	 */
 	class Names implements Comparable<Names> {
 		private String name;
 
@@ -33,7 +37,7 @@ public class ComparableInterface {
 	}
 
 	public static void main(String[] args) {
-		List names=new LinkedList<Names>();
+		List <String>names=new LinkedList<>();
 		names.add("Subhan");
 		names.add("Gopi");
 		names.add("Sriram");
@@ -48,8 +52,8 @@ public class ComparableInterface {
         example.displayNames(names);
 	}
 
-	public void displayNames(List names) {
-		ListIterator<Names> iterator = names.listIterator();
+	public void displayNames(List<String> names) {
+		ListIterator<String> iterator = names.listIterator();
 		while(iterator.hasNext()) {
 			System.out.println("Your name is: "+iterator.next());
 		}
